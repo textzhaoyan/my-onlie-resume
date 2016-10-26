@@ -98,6 +98,7 @@ color: #666;
 
 .name p {
 	line-height: 20px;
+	padding: 0 20px 0 20px;
 }
 
 #header-down .inner .btn {
@@ -564,7 +565,7 @@ footer img {
 .contact-grids p {
 	color: #fff;
     margin: 18px auto 0 auto;
-    width: 61%;
+    text-align: center;
     font-size: 12px;
     line-height: 14px;
 }
