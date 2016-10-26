@@ -382,6 +382,7 @@ h3{
 /*section4*/
 .section4 {
     text-align: center;
+    padding:20px 0 20px 0;
 }
 
 .section4 h2 {
@@ -389,15 +390,14 @@ h3{
     font-size: 20px;
 }
 
-.section4 .hr {
-    border-top: 2px solid #ccc;
-    margin: 15px auto;
-    width: 600px;
-    padding-top: 20px;
-}
 
 .section4 p {
     font-size: 12px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    margin: 15px auto;
+    max-width: 600px;
+    padding-top: 20px;
 }
 
 .section4 .heading-wrapper {
