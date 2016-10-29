@@ -5,6 +5,8 @@ color: #666;
 }
 
 /*header >nav*/
+
+
 .head-left {
 	display: inline-block;
     font-size: 12px;
@@ -12,6 +14,8 @@ color: #666;
     cursor: pointer;
     margin-top: 5px;
 }
+
+
 
 .head-left img {
 	width: 40px;
@@ -38,7 +42,7 @@ color: #666;
 /*header*/
 #header-down {
 	background-color: #777;
-	height: 600px;
+	height: 560px;
 	color:#d9edf7;
 }
 
@@ -49,7 +53,7 @@ color: #666;
 .myphoto img {
 	/*display: none;*/
 	border-radius: 80px;
-	max-height: 140px;
+	max-height: 120px;
 	border: 2px #CCCCCC solid;
 	transition:all 1s ease-in-out;
 	-moz-transition:all 1s ease-in-out;
@@ -121,10 +125,10 @@ color: #666;
 }
 
 #header-down .inner .more {
-   margin-top: 30px;
-   font-size: 12px;
-   display:inline-block; 
-   _zoom:1;_display:inline;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    /*top: 528px;*/
 }
 
 
@@ -159,7 +163,6 @@ color: #666;
 .section1 p {
 	font-size: 12px;
 } 
-
 
 
 .section1 .icon-group {
@@ -245,7 +248,7 @@ color: #666;
 }
 
 .section-about {
-	margin: 40px auto;
+	margin: 20px auto;
 }
 .progress .progress-bar {
 	text-align: left;
@@ -324,6 +327,11 @@ color: #666;
 	float: left;
 	font-size: 14px;
 }
+
+.progress {
+	background-color: #DEECDF;
+}
+
 /*tiaozheng*/
 .section2 {
 	text-align: center;
@@ -394,7 +402,7 @@ h3{
 }
 
 /*change 2016.10.26*/
-.section4 p {
+.section4 .hr p {
     font-size: 12px;
     text-align: center;
     border-top: 2px solid #ccc;
@@ -417,11 +425,11 @@ h3{
 /*作品*/
 
 .portfolio{
-	padding:10px 0 50px;
+	padding:10px 0 20px;
 }
 .portfolio-grid{
 	position:relative;
-	width:25%;
+	width:50%;
 	float:left;
 }
 
@@ -452,6 +460,11 @@ h3{
    color: #fff;
    text-transform: uppercase;
 }
+
+.info img {
+	max-height: 30px;
+}
+
 .view-first img {
    -webkit-transition: all 0.2s linear;
    -moz-transition: all 0.2s linear;
@@ -600,9 +613,29 @@ footer img {
     font-weight: 600;
 }
 
+/*向上按钮*/
+div.go-top {
+    display: none;
+    opacity: 0.6;
+    z-index: 999999;
+    position: fixed;
+    bottom: 113px;
+    left: 90%;
+    border: 1px solid #428bca;
+    width: 28px;
+    height: 28px;
+    background-color: #428bca;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
 
-
-
+.arrow {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+}
 
 /* 小屏幕（平板，大于等于768px） */
 
@@ -611,7 +644,7 @@ footer img {
 @media (min-width: 768px) {
 
 #header-down {
-	height: 620px;
+	height: 560px;
 }	
 .name h1 {
 	font-size: 26px;
@@ -639,6 +672,11 @@ footer img {
 .wrapper h2{
 	letter-spacing: 18px;
 	font-size: 22px;
+}
+
+.section1 .icon-group {
+    max-width: 900px;
+    margin: 30px auto;
 }
 
 .section2 h2{
@@ -728,6 +766,41 @@ footer img {
     color: #595c5f;
     font-weight: 600;
 }
+
+div.go-top {
+    display: none;
+    opacity: 0.6;
+    z-index: 999999;
+    position: fixed;
+    bottom: 113px;
+    left: 90%;
+    margin-left: 40px;
+    border: 1px solid #428bca;
+    width: 38px;
+    height: 38px;
+    background-color: #428bca;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.arrow {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+.portfolio-grid{
+	position:relative;
+	width:25%;
+	float:left;
+}
+
+.info img {
+	max-height: 25px;
+}
+
 
 } 
 
@@ -860,40 +933,36 @@ div.go-top {
     left: 90%;
     margin-left: 40px;
     border: 1px solid #428bca;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 40px;
     background-color: #428bca;
     border-radius: 3px;
     cursor: pointer;
+    text-align: center;
 }
 
 div.go-top:hover {
     opacity: 1;
-    filter: alpha(opacity=100);
+    filter: alpha(opacity=70);
 }
 
-div.go-top div.arrow {
-    position: absolute;
-    left: 10px;
-    top: -1px;
-    width: 0;
-    height: 0;
-    border: 9px solid transparent;
-    border-bottom-color: #eee;
+.arrow {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+	line-height: 38px;
+
+}
+.portfolio-grid{
+	position:relative;
+	width:25%;
+	float:left;
 }
 
-div.go-top div.stick {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    width: 8px;
-    height: 14px;
-    display: block;
-    background-color: #eee;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
+.info img {
+	max-height: 50px;
 }
+
 }
 
 
@@ -1021,6 +1090,16 @@ div.go-top div.stick {
     font-size: 12px;
     color: #595c5f;
     font-weight: 600;
+}
+
+.portfolio-grid{
+	position:relative;
+	width:25%;
+	float:left;
+}
+
+.info img {
+	max-height: 60px;
 }
 
 }
