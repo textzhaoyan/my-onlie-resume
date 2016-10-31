@@ -7,14 +7,11 @@ $(function(){
 //   $(this).css({borderbottom:"1px solid red"});
 // });
 
-// 弹窗
-// $('#information').on('click',function(){
+
+
+// $('#case').on('click',function(){
 // 	alert('页面正在装修中……')
 // });
-
-$('#case').on('click',function(){
-	alert('页面正在装修中……')
-});
 
 $('#about').on('click',function(){
 	alert('页面正在装修中……')
