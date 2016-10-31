@@ -8,9 +8,9 @@ $(function(){
 // });
 
 // 弹窗
-$('#information').on('click',function(){
-	alert('页面正在装修中……')
-});
+// $('#information').on('click',function(){
+// 	alert('页面正在装修中……')
+// });
 
 $('#case').on('click',function(){
 	alert('页面正在装修中……')

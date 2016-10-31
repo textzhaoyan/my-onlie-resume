@@ -542,7 +542,7 @@ h3{
 footer {
 	text-align: center;
     background-color: #666;
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
     padding: 20px;
     color: #eee;
 }
