@@ -1,6 +1,12 @@
 
 
 $(function(){
+
+// nav
+//  $(".name").hover(function(){
+//   $(this).css({borderbottom:"1px solid red"});
+// });
+
 // 弹窗
 $('#information').on('click',function(){
 	alert('页面正在装修中……')
@@ -76,9 +82,30 @@ $(window).scroll(function() {
 
 
 
+// $(document).ready(function () {            
+//          $(window).scroll(function () {        
+//      if ($(window).scrollTop() == 1000) {
+//        alert('ok!!');
+//     }
+//          });
+//      });
 
-
-
+// 语句动画
+// $('.hr').css('opacity',1)
+// 更多按钮
+$('.more').css('top',$('#header-down').height()*0.8+'px');
+ $(window).resize(function () {
+    var $height=$('#header-down').height();
+    $('.more').css('top',$height*0.8+'px');
+  });
+// 轮播图按钮
+$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+  $(window).resize(function () {
+    var $height = $('.carousel-inner img').eq(0).height() || 
+            $('.carousel-inner img').eq(1).height() || 
+            $('.carousel-inner img').eq(2).height();
+    $('.carousel-control').css('line-height', $height + 'px');
+  });
 
 
 
